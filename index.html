@@ -1,4 +1,93 @@
 <!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>ZABAPAD Workshop</title>
+<meta name="description" content="ZABAPAD (Zero-knowledge And Blockchain: Advancing the Post-quantum And Decentralization era) Workshop." />
+<meta property="og:title" content="ZABAPAD Workshop" />
+<meta property="og:description" content="Zero-knowledge And Blockchain: Advancing the Post-quantum And Decentralization era." />
+<meta name="theme-color" content="#111827" />
+<style>
+:root{
+--bg:#0b1220;--fg:#e5e7eb;--muted:#a5b4fc;--brand:#60a5fa;--card:#111827;--max:1000px;
+--accent:#34d399;--border:#1f2937
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%}
+body{background:linear-gradient(180deg,#0b1220,#0b1220 40%,#0a0f1a);color:var(--fg);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+a{color:var(--brand);text-decoration:none}
+a:hover{text-decoration:underline}
+header{position:sticky;top:0;backdrop-filter:saturate(180%) blur(8px);background:rgba(11,18,32,0.8);border-bottom:1px solid var(--border);z-index:50}
+nav{max-width:var(--max);margin:0 auto;display:flex;gap:14px;align-items:center;padding:10px 16px;overflow:auto}
+nav a{padding:6px 10px;border-radius:8px;white-space:nowrap}
+nav a:hover{background:#0f172a}
+.wrap{max-width:var(--max);margin:0 auto;padding:24px 16px}
+.hero{padding:56px 16px 20px}
+.tag{display:inline-block;background:#0f172a;color:#7dd3fc;border:1px solid #0b2740;padding:4px 10px;border-radius:999px;font-size:12px}
+h1{margin:10px 0 8px;font-size:34px;line-height:1.2}
+.subtitle{color:#cbd5e1;margin:0 0 6px}
+.pill{display:inline-block;background:#052e2b;color:#a7f3d0;border:1px solid #064e3b;padding:2px 8px;border-radius:999px;font-size:12px}
+section{padding:52px 0;scroll-margin-top:84px;position:relative}
+/* Section separators */
+section + section{border-top:1px solid var(--border)}
+/* Alternating section backgrounds for clearer grouping */
+main.wrap > section:nth-of-type(odd){background:rgba(255,255,255,0.025)}
+main.wrap > section:nth-of-type(even){background:rgba(255,255,255,0.05)}
+h2{margin:0 0 12px;font-size:22px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px}
+.grid{display:grid;gap:16px}
+.cards{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.twocol{display:grid;gap:24px}
+@media(min-width:900px){.twocol{grid-template-columns:1.2fr .8fr}}
+table{width:100%;border-collapse:collapse;background:#0a1220;border:1px solid var(--border);border-radius:10px;overflow:hidden}
+th,td{padding:10px;border-bottom:1px solid var(--border);text-align:left;font-size:14px}
+tr:last-child td{border-bottom:0}
+.note{font-size:13px;color:#9ca3af}
+footer{border-top:1px solid var(--border);margin-top:28px;color:#9ca3af;padding:20px 16px}
+.news ul{margin:0;padding-left:18px}
+.news li{margin:4px 0}
+.speakers .card strong,.orgs .card strong{display:block;margin-bottom:6px}
+.btn{display:inline-block;padding:10px 14px;border-radius:10px;border:1px solid #1f2937;background:#111827;color:#e5e7eb;text-decoration:none}
+.btn:hover{background:#0f172a}
+.cta{display:flex;gap:10px;flex-wrap:wrap}
+.banner{margin-top:8px;display:flex;gap:8px;flex-wrap:wrap}
+.banner .pill{background:#0b1a34;color:#93c5fd;border-color:#1e3a8a}
+.mono{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;}
+</style>
+</head>
+<body>
+<header>
+<nav>
+<a href="#intro">Intro</a>
+<a href="#cfp">Call for Papers</a>
+<a href="#dates">Important Dates</a>
+<a href="#program">Program</a>
+<a href="#speakers">Speakers</a>
+<a href="#organizers">Organizers</a>
+<a href="#pc">Program Committee</a>
+<a href="#submission">Submission</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+
+<main class="wrap">
+<section class="hero" id="intro">
+<span class="tag">Workshop</span>
+<h1>ZABAPAD Workshop</h1>
+<p class="subtitle">Zero-knowledge And Blockchain: Advancing the Post-quantum And Decentralization era</p>
+<div class="banner">
+<span class="pill">Conference: TBD</span>
+<span class="pill">Location: TBD</span>
+<span class="pill">Date: YYYY-MM-DD</span>
+<span class="pill">Timezone: AoE / Local</span>
+</div>
+<p class="subtitle">A venue for systems and cryptography researchers exploring decentralization across ZK, blockchain, and post-quantum security, with bridges to quantum-era computing.</p>
+<div class="cta">
+<a class="btn" href="#submission">Submit Paper</a>
+<a class="btn" href="#cfp">Read CFP</a>
+</div>
 </section>
 
 
@@ -18,94 +107,4 @@
 <li>[YYYY-MM-DD] Website launched.</li>
 <li>[YYYY-MM-DD] CFP posted.</li>
 <li>[YYYY-MM-DD] Submission site open.</li>
-</ul>
-</div>
-<h2 style="margin-top:16px">Artifacts</h2>
-<div class="card">
-<p>We welcome optional artifact evaluation. Links to code/data can be included as anonymized repositories during review.</p>
-</div>
-</div>
-</section>
-
-
-<section id="dates">
-<h2>Important Dates</h2>
-<table>
-<tr><th>Event</th><th>Deadline</th></tr>
-<tr><td>Paper submission</td><td>YYYY-MM-DD 23:59 AoE</td></tr>
-<tr><td>Author response (optional)</td><td>YYYY-MM-DD</td></tr>
-<tr><td>Notification</td><td>YYYY-MM-DD</td></tr>
-<tr><td>Camera-ready</td><td>YYYY-MM-DD</td></tr>
-<tr><td>Workshop</td><td>YYYY-MM-DD</td></tr>
-</table>
-<p class="note">AoE = Anywhere on Earth. Replace with the conference timezone if required.</p>
-</section>
-
-
-<section id="program">
-<h2>Program</h2>
-<table>
-<tr><th>Time</th><th>Session</th></tr>
-<tr><td>09:00–09:10</td><td>Opening Remarks</td></tr>
-<tr><td>09:10–09:50</td><td>Invited Talk 1 — Speaker Name (Affiliation)</td></tr>
-<tr><td>09:50–10:30</td><td>Invited Talk 2 — Speaker Name (Affiliation)</td></tr>
-<tr><td>10:30–10:50</td><td>Coffee Break</td></tr>
-<tr><td>10:50–12:10</td><td>Paper Session 1</td></tr>
-<tr><td>12:10–14:00</td><td>Lunch</td></tr>
-<tr><td>14:00–15:30</td><td>Paper Session 2</td></tr>
-<tr><td>15:30–16:00</td><td>Break</td></tr>
-<tr><td>16:00–17:00</td><td>Panel / Discussion</td></tr>
-<tr><td>17:00–17:10</td><td>Closing</td></tr>
-</table>
-</section>
-
-
-<section id="speakers" class="speakers grid cards">
-<div class="card"><strong>Speaker A</strong>Affiliation<br><a href="#">Homepage</a></div>
-<div class="card"><strong>Speaker B</strong>Affiliation<br><a href="#">Homepage</a></div>
-<div class="card"><strong>Speaker C</strong>Affiliation<br><a href="#">Homepage</a></div>
-</section>
-
-
-<section id="organizers" class="orgs grid cards">
-<div class="card"><strong>General Chairs</strong> Names…</div>
-<div class="card"><strong>Program Chairs</strong> Names…</div>
-<div class="card"><strong>Publicity / Web</strong> Names…</div>
-</section>
-
-
-<section id="pc" class="card">
-<h2 style="margin-top:0">Program Committee</h2>
-<p>Names…</p>
-</section>
-
-
-<section id="submission" class="twocol">
-<div>
-<h2>Submission</h2>
-<div class="card">
-<p>Submission site: <a href="#">OpenReview / CMT link</a></p>
-<p>Format: Follow conference template (double-blind if required). Use PDF. Include up to N pages + references.</p>
-<p>Topics and scope as in CFP. Contact us for suitability questions.</p>
-</div>
-</div>
-<div>
-<h2>Contact</h2>
-<div class="card">
-<p>Email: <a href="mailto:zabapad-workshop@domain.com">zabapad-workshop@domain.com</a></p>
-<p>Social: <a href="#">Twitter/X</a> · <a href="#">Bluesky</a> · <a href="#">Mastodon</a></p>
-</div>
-<h2 style="margin-top:16px">Sponsors</h2>
-<div class="card">
-<p>We thank our sponsors. Logos go here.</p>
-</div>
-</div>
-</section>
-
-
-<footer>
-© YYYY ZABAPAD Workshop. Hosted on GitHub Pages. · <span class="mono">/index.html</span>
-</footer>
-</main>
-</body>
 </html>
