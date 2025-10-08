@@ -1,110 +1,135 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>ZABAPAD Workshop</title>
-<meta name="description" content="ZABAPAD (Zero-knowledge And Blockchain: Advancing the Post-quantum And Decentralization era) Workshop." />
-<meta property="og:title" content="ZABAPAD Workshop" />
-<meta property="og:description" content="Zero-knowledge And Blockchain: Advancing the Post-quantum And Decentralization era." />
-<meta name="theme-color" content="#111827" />
-<style>
-:root{
---bg:#0b1220;--fg:#e5e7eb;--muted:#a5b4fc;--brand:#60a5fa;--card:#111827;--max:1000px;
---accent:#34d399;--border:#1f2937
-}
-*{box-sizing:border-box}
-html,body{margin:0;height:100%}
-body{background:linear-gradient(180deg,#0b1220,#0b1220 40%,#0a0f1a);color:var(--fg);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
-a{color:var(--brand);text-decoration:none}
-a:hover{text-decoration:underline}
-header{position:sticky;top:0;backdrop-filter:saturate(180%) blur(8px);background:rgba(11,18,32,0.8);border-bottom:1px solid var(--border);z-index:50}
-nav{max-width:var(--max);margin:0 auto;display:flex;gap:14px;align-items:center;padding:10px 16px;overflow:auto}
-nav a{padding:6px 10px;border-radius:8px;white-space:nowrap}
-nav a:hover{background:#0f172a}
-.wrap{max-width:var(--max);margin:0 auto;padding:24px 16px}
-.hero{padding:56px 16px 20px}
-.tag{display:inline-block;background:#0f172a;color:#7dd3fc;border:1px solid #0b2740;padding:4px 10px;border-radius:999px;font-size:12px}
-h1{margin:10px 0 8px;font-size:34px;line-height:1.2}
-.subtitle{color:#cbd5e1;margin:0 0 6px}
-.pill{display:inline-block;background:#052e2b;color:#a7f3d0;border:1px solid #064e3b;padding:2px 8px;border-radius:999px;font-size:12px}
-section{padding:52px 0;scroll-margin-top:84px;position:relative}
-/* Section separators */
-section + section{border-top:1px solid var(--border)}
-/* Alternating section backgrounds for clearer grouping */
-main.wrap > section:nth-of-type(odd){background:rgba(255,255,255,0.025)}
-main.wrap > section:nth-of-type(even){background:rgba(255,255,255,0.05)}
-h2{margin:0 0 12px;font-size:22px}
-.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px}
-.grid{display:grid;gap:16px}
-.cards{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
-.twocol{display:grid;gap:24px}
-@media(min-width:900px){.twocol{grid-template-columns:1.2fr .8fr}}
-table{width:100%;border-collapse:collapse;background:#0a1220;border:1px solid var(--border);border-radius:10px;overflow:hidden}
-th,td{padding:10px;border-bottom:1px solid var(--border);text-align:left;font-size:14px}
-tr:last-child td{border-bottom:0}
-.note{font-size:13px;color:#9ca3af}
-footer{border-top:1px solid var(--border);margin-top:28px;color:#9ca3af;padding:20px 16px}
-.news ul{margin:0;padding-left:18px}
-.news li{margin:4px 0}
-.speakers .card strong,.orgs .card strong{display:block;margin-bottom:6px}
-.btn{display:inline-block;padding:10px 14px;border-radius:10px;border:1px solid #1f2937;background:#111827;color:#e5e7eb;text-decoration:none}
-.btn:hover{background:#0f172a}
-.cta{display:flex;gap:10px;flex-wrap:wrap}
-.banner{margin-top:8px;display:flex;gap:8px;flex-wrap:wrap}
-.banner .pill{background:#0b1a34;color:#93c5fd;border-color:#1e3a8a}
-.mono{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;}
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Workshop Title</title>
+  <meta name="description" content="Workshop on ____ at ____ (Conference YYYY).">
+  <meta property="og:title" content="Your Workshop Title">
+  <meta property="og:description" content="Workshop on ____ at ____ (Conference YYYY).">
+  <style>
+    :root{
+      --bg:#ffffff;--fg:#111;--muted:#555;--brand:#2f6feb;--card:#f6f8fa;--max:980px;
+      /* ✨ 추가: 아주 옅은 보라색 섹션 배경 */
+      --alt:#faf5ff;
+      /* ✨ 추가: 섹션 구분선 색 (기존 테이블/푸터와 톤 맞춤) */
+      --sep:#eaecef;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    a{color:var(--brand);text-decoration:none} a:hover{text-decoration:underline}
+    header{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--sep);z-index:10}
+    nav{max-width:var(--max);margin:0 auto;display:flex;gap:16px;align-items:center;padding:10px 16px;overflow:auto}
+    nav a{padding:6px 8px;border-radius:8px} nav a:hover{background:#f2f2f2}
+    .wrap{max-width:var(--max);margin:0 auto;padding:24px 16px}
+    .hero{padding:40px 16px 10px}
+    .hero h1{margin:0 0 8px;font-size:32px}
+    .subtitle{color:var(--muted);margin:0 0 8px}
+    .tag{display:inline-block;background:#e7f0ff;color:#174ea6;border:1px solid #cfe0ff;padding:2px 8px;border-radius:999px;font-size:12px}
+
+    /* ✅ 변경: 섹션 간격 확대 + 앵커 보정 유지 */
+    section{padding:48px 0;scroll-margin-top:70px;position:relative}
+
+    /* ✅ 추가: 섹션 사이 구분선(가로 라인) */
+    section + section{border-top:1px solid var(--sep)}
+
+    /* ✅ 추가: 섹션 배경 교차(1: 흰색, 2: 옅은 보라, 3: 흰색, …) */
+    /* nth-of-type는 .wrap 안에서 section만 카운트합니다 (hero는 div라 제외). */
+    section:nth-of-type(odd){background:#fff}
+    section:nth-of-type(even){background:var(--alt)}
+
+    h2{margin:0 0 12px;font-size:22px}
+    .grid{display:grid;gap:16px}
+    .cards{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+    .card{background:var(--card);border:1px solid var(--sep);border-radius:12px;padding:16px}
+    table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--sep);border-radius:8px;overflow:hidden}
+    th,td{padding:10px;border-bottom:1px solid var(--sep);text-align:left;font-size:14px}
+    tr:last-child td{border-bottom:0}
+    footer{border-top:1px solid var(--sep);margin-top:24px;color:var(--muted);padding:20px 16px}
+    @media (min-width:800px){.twocol{display:grid;grid-template-columns:1.2fr .8fr;gap:24px}}
+  </style>
 </head>
 <body>
 <header>
-<nav>
-<a href="#intro">Intro</a>
-<a href="#cfp">Call for Papers</a>
-<a href="#dates">Important Dates</a>
-<a href="#program">Program</a>
-<a href="#speakers">Speakers</a>
-<a href="#organizers">Organizers</a>
-<a href="#pc">Program Committee</a>
-<a href="#submission">Submission</a>
-<a href="#contact">Contact</a>
-</nav>
+  <nav>
+    <a href="#intro">Introduction</a>
+    <a href="#cfp">Call for Papers</a>
+    <a href="#dates">Important Dates</a>
+    <a href="#program">Program</a>
+    <a href="#speakers">Speakers</a>
+    <a href="#organizers">Organizers</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
-
 <main class="wrap">
-<section class="hero" id="intro">
-<span class="tag">Workshop</span>
-<h1>ZABAPAD Workshop</h1>
-<p class="subtitle">Zero-knowledge And Blockchain: Advancing the Post-quantum And Decentralization era</p>
-<div class="banner">
-<span class="pill">Conference: TBD</span>
-<span class="pill">Location: TBD</span>
-<span class="pill">Date: YYYY-MM-DD</span>
-<span class="pill">Timezone: AoE / Local</span>
-</div>
-<p class="subtitle">A venue for systems and cryptography researchers exploring decentralization across ZK, blockchain, and post-quantum security, with bridges to quantum-era computing.</p>
-<div class="cta">
-<a class="btn" href="#submission">Submit Paper</a>
-<a class="btn" href="#cfp">Read CFP</a>
-</div>
-</section>
+  <div class="hero">
+    <span class="tag">Workshop</span>
+    <h1>Your Workshop Title</h1>
+    <p class="subtitle">at Conference YYYY • City, Country</p>
+    <p class="subtitle">Date: Month DD, YYYY</p>
+  </div>
 
+  <section id="intro" class="twocol">
+    <div>
+      <h2>Introduction</h2>
+      <p>One-paragraph intro about the workshop scope, audience, and goals.</p>
+    </div>
+    <div>
+      <h2>News</h2>
+      <div class="card"><strong>[YYYY-MM-DD]</strong> Website launched.</div>
+    </div>
+  </section>
 
-<section id="cfp" class="twocol">
-<div>
-<h2>Call for Papers</h2>
-<div class="card">
-<p>We invite original, unpublished work on topics including zero-knowledge protocols and systems, post-quantum cryptography for decentralized networks, verifiable and privacy-preserving computation, decentralized identity (DID/VC), data availability and sampling, rollups and DA layers, MPC/threshold cryptography, CRDT-enabled P2P, and decentralized storage/compute markets.</p>
-<p>Submissions should follow the host conference format and anonymization policy if applicable. Typical length: N pages excluding references; include an appendix for artifacts if needed.</p>
-<p>At least one author of each accepted paper must register and present at the workshop.</p>
-</div>
-</div>
-<div>
-<h2>News</h2>
-<div class="card news">
-<ul>
-<li>[YYYY-MM-DD] Website launched.</li>
-<li>[YYYY-MM-DD] CFP posted.</li>
-<li>[YYYY-MM-DD] Submission site open.</li>
+  <section id="cfp">
+    <h2>Call for Papers</h2>
+    <div class="card">
+      <p>We invite original, unpublished work on topics such as ____.</p>
+      <p>Submission site: <a href="#">OpenReview / CMT link</a></p>
+      <p>Format: follow conference guidelines (N pages + refs). Double-blind if required.</p>
+    </div>
+  </section>
+
+  <section id="dates">
+    <h2>Important Dates</h2>
+    <table>
+      <tr><th>Event</th><th>Deadline (AoE or timezone)</th></tr>
+      <tr><td>Paper submission</td><td>YYYY-MM-DD 23:59 (AoE)</td></tr>
+      <tr><td>Notification</td><td>YYYY-MM-DD</td></tr>
+      <tr><td>Camera-ready</td><td>YYYY-MM-DD</td></tr>
+      <tr><td>Workshop</td><td>YYYY-MM-DD</td></tr>
+    </table>
+  </section>
+
+  <section id="program">
+    <h2>Program</h2>
+    <table>
+      <tr><th>Time</th><th>Session</th></tr>
+      <tr><td>09:00–09:10</td><td>Opening Remarks</td></tr>
+      <tr><td>09:10–09:40</td><td>Invited Talk 1 — Speaker Name (Affiliation)</td></tr>
+      <tr><td>…</td><td>…</td></tr>
+    </table>
+  </section>
+
+  <section id="speakers" class="grid cards">
+    <div class="card"><strong>Speaker A</strong><br>Affiliation<br><a href="#">Homepage</a></div>
+    <div class="card"><strong>Speaker B</strong><br>Affiliation<br><a href="#">Homepage</a></div>
+    <div class="card"><strong>Speaker C</strong><br>Affiliation<br><a href="#">Homepage</a></div>
+  </section>
+
+  <section id="organizers" class="grid cards">
+    <div class="card"><strong>Organizer 1</strong><br>Affiliation</div>
+    <div class="card"><strong>Organizer 2</strong><br>Affiliation</div>
+    <div class="card"><strong>PC Chairs</strong><br>Names…</div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:your-workshop@domain.com">your-workshop@domain.com</a></p>
+    <p>Acknowledgments / sponsors if any.</p>
+  </section>
+
+  <footer>© YYYY Workshop. Hosted on GitHub Pages.</footer>
+</main>
+</body>
 </html>
