@@ -1,0 +1,111 @@
+<!doctype html>
+</section>
+
+
+<section id="cfp" class="twocol">
+<div>
+<h2>Call for Papers</h2>
+<div class="card">
+<p>We invite original, unpublished work on topics including zero-knowledge protocols and systems, post-quantum cryptography for decentralized networks, verifiable and privacy-preserving computation, decentralized identity (DID/VC), data availability and sampling, rollups and DA layers, MPC/threshold cryptography, CRDT-enabled P2P, and decentralized storage/compute markets.</p>
+<p>Submissions should follow the host conference format and anonymization policy if applicable. Typical length: N pages excluding references; include an appendix for artifacts if needed.</p>
+<p>At least one author of each accepted paper must register and present at the workshop.</p>
+</div>
+</div>
+<div>
+<h2>News</h2>
+<div class="card news">
+<ul>
+<li>[YYYY-MM-DD] Website launched.</li>
+<li>[YYYY-MM-DD] CFP posted.</li>
+<li>[YYYY-MM-DD] Submission site open.</li>
+</ul>
+</div>
+<h2 style="margin-top:16px">Artifacts</h2>
+<div class="card">
+<p>We welcome optional artifact evaluation. Links to code/data can be included as anonymized repositories during review.</p>
+</div>
+</div>
+</section>
+
+
+<section id="dates">
+<h2>Important Dates</h2>
+<table>
+<tr><th>Event</th><th>Deadline</th></tr>
+<tr><td>Paper submission</td><td>YYYY-MM-DD 23:59 AoE</td></tr>
+<tr><td>Author response (optional)</td><td>YYYY-MM-DD</td></tr>
+<tr><td>Notification</td><td>YYYY-MM-DD</td></tr>
+<tr><td>Camera-ready</td><td>YYYY-MM-DD</td></tr>
+<tr><td>Workshop</td><td>YYYY-MM-DD</td></tr>
+</table>
+<p class="note">AoE = Anywhere on Earth. Replace with the conference timezone if required.</p>
+</section>
+
+
+<section id="program">
+<h2>Program</h2>
+<table>
+<tr><th>Time</th><th>Session</th></tr>
+<tr><td>09:00–09:10</td><td>Opening Remarks</td></tr>
+<tr><td>09:10–09:50</td><td>Invited Talk 1 — Speaker Name (Affiliation)</td></tr>
+<tr><td>09:50–10:30</td><td>Invited Talk 2 — Speaker Name (Affiliation)</td></tr>
+<tr><td>10:30–10:50</td><td>Coffee Break</td></tr>
+<tr><td>10:50–12:10</td><td>Paper Session 1</td></tr>
+<tr><td>12:10–14:00</td><td>Lunch</td></tr>
+<tr><td>14:00–15:30</td><td>Paper Session 2</td></tr>
+<tr><td>15:30–16:00</td><td>Break</td></tr>
+<tr><td>16:00–17:00</td><td>Panel / Discussion</td></tr>
+<tr><td>17:00–17:10</td><td>Closing</td></tr>
+</table>
+</section>
+
+
+<section id="speakers" class="speakers grid cards">
+<div class="card"><strong>Speaker A</strong>Affiliation<br><a href="#">Homepage</a></div>
+<div class="card"><strong>Speaker B</strong>Affiliation<br><a href="#">Homepage</a></div>
+<div class="card"><strong>Speaker C</strong>Affiliation<br><a href="#">Homepage</a></div>
+</section>
+
+
+<section id="organizers" class="orgs grid cards">
+<div class="card"><strong>General Chairs</strong> Names…</div>
+<div class="card"><strong>Program Chairs</strong> Names…</div>
+<div class="card"><strong>Publicity / Web</strong> Names…</div>
+</section>
+
+
+<section id="pc" class="card">
+<h2 style="margin-top:0">Program Committee</h2>
+<p>Names…</p>
+</section>
+
+
+<section id="submission" class="twocol">
+<div>
+<h2>Submission</h2>
+<div class="card">
+<p>Submission site: <a href="#">OpenReview / CMT link</a></p>
+<p>Format: Follow conference template (double-blind if required). Use PDF. Include up to N pages + references.</p>
+<p>Topics and scope as in CFP. Contact us for suitability questions.</p>
+</div>
+</div>
+<div>
+<h2>Contact</h2>
+<div class="card">
+<p>Email: <a href="mailto:zabapad-workshop@domain.com">zabapad-workshop@domain.com</a></p>
+<p>Social: <a href="#">Twitter/X</a> · <a href="#">Bluesky</a> · <a href="#">Mastodon</a></p>
+</div>
+<h2 style="margin-top:16px">Sponsors</h2>
+<div class="card">
+<p>We thank our sponsors. Logos go here.</p>
+</div>
+</div>
+</section>
+
+
+<footer>
+© YYYY ZABAPAD Workshop. Hosted on GitHub Pages. · <span class="mono">/index.html</span>
+</footer>
+</main>
+</body>
+</html>
