@@ -10,10 +10,6 @@
   <style>
     :root{
       --bg:#ffffff;--fg:#111;--muted:#555;--brand:#2f6feb;--card:#f6f8fa;--max:980px;
-      /* ✨ 추가: 아주 옅은 보라색 섹션 배경 */
-      --alt:#faf5ff;
-      /* ✨ 추가: 섹션 구분선 색 (기존 테이블/푸터와 톤 맞춤) */
-      --sep:#eaecef;
     }
     *{box-sizing:border-box}
     body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
@@ -32,11 +28,6 @@
 
     /* ✅ 추가: 섹션 사이 구분선(가로 라인) */
     section + section{border-top:1px solid var(--sep)}
-
-    /* ✅ 추가: 섹션 배경 교차(1: 흰색, 2: 옅은 보라, 3: 흰색, …) */
-    /* nth-of-type는 .wrap 안에서 section만 카운트합니다 (hero는 div라 제외). */
-    section:nth-of-type(odd){background:#fff}
-    section:nth-of-type(even){background:var(--alt)}
 
     h2{margin:0 0 12px;font-size:22px}
     .grid{display:grid;gap:16px}
